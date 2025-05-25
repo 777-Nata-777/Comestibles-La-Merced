@@ -256,3 +256,101 @@ footer {
         padding: 8px 20px;
     }
 }
+/*iniciar sesion*/
+.joker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+.Iniciar_sesion_form {
+    background-color: #fff8f0;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px #fae2c9;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    animation: aparecer 0.8s ease-out;
+}
+.Iniciar_sesion_form img {
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    animation: floatIn 1s ease;
+    border-radius: 100px;
+}
+.Iniciar_sesion_form legend h1 {
+    color: #6a4e42;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    animation: fadeInUp 1s ease;
+}
+.Iniciar_sesion_form legend {
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+.Iniciar_sesion_form input[type="text"],
+.Iniciar_sesion_form input[type="password"] {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    background-color: #e4c8a7;
+    color: #6a4e42;
+    font-size: 16px;
+    margin-bottom: 15px;
+    max-width: 350px;
+}
+.Iniciar_sesion_form input[type="text"]:focus,
+.Iniciar_sesion_form input[type="password"]:focus {
+    box-shadow: 0 0 10px #fae2c9;
+}
+.Iniciar_sesion_form input[type="submit"] {
+    background: linear-gradient(90deg, #f9c74f, #f9844a);
+    color: #6a4e42;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.Iniciar_sesion_form input[type="submit"]:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #d1a642, #ce6d3c);
+}
+.Iniciar_sesion_form fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes floatIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 480px) {
+    .Iniciar_sesion_form {
+        padding: 1.5rem;
+    }
+    .Iniciar_sesion_form legend h1 {
+        font-size: 1.4rem;
+    }
+    .Iniciar_sesion_form input[type="submit"] {
+        width: 100%;
+    }
+}
