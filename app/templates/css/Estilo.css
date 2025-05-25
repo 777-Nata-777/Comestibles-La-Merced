@@ -1,6 +1,9 @@
 a {
     text-decoration: none;
 }
+body {
+    background-color: #ffffff;
+}
 /*header*/
 .header-inicio {
     display: flex;
@@ -12,13 +15,19 @@ a {
 }
 .logo-inicio img {
     height: 80px;
-    border-radius: 10px;
+    border-radius: 100px;
     transition: transform 0.3s ease-in-out;
 }
 .logo-inicio img:hover {
     transform: scale(1.05);
 }
 .h1-inicio h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    animation: entradaTitulo 1s ease-out;
+}
+.h1-inicio h2 {
     color: #ffffff;
     font-size: 2.5rem;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
@@ -95,6 +104,7 @@ a {
     padding: 30px;
     background: #fff8f0;
     margin: 20px 0;
+    border-radius: 150px;
 }
 .anun-promo h4 {
     font-size: 1.4rem;
@@ -147,4 +157,102 @@ footer {
     margin: 0;
     font-size: 15px;
     color: black;
+}
+/*Registrarse*/
+.div_registrarse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+.div_registrarse form {
+    background-color: #fff8f0;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px #fae2c9;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    color: #6a4e42;
+    animation: aparecer 0.8s ease-out;
+}
+.div_registrarse fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    border: none;
+}
+.div_registrarse legend h1 {
+    color: #6a4e42;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+.div_registrarse input[type="text"],
+.div_registrarse input[type="password"],
+.div_registrarse input[type="email"],
+.div_registrarse input[type="date"],
+.div_registrarse textarea {
+    width: 90%;
+    max-width: 400px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #e4c8a7;
+    color: #6a4e42;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.div_registrarse textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+.div_registrarse input[type="submit"] {
+    background: linear-gradient(90deg, #f9c74f, #f9844a);
+    color: #6a4e42;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 1rem;
+    width: 60%;
+    max-width: 200px;
+}
+.div_registrarse input[type="submit"]:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #d1a642, #ce6d3c);
+}
+.div_registrarse input[type="checkbox"] {
+    margin-right: 8px;
+}
+@media (max-width: 480px) {
+    .div_registrarse form {
+        padding: 1.5rem;
+    }
+    .div_registrarse legend h1 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .div_registrarse textarea {
+        width: 100%;
+    }
+    .div_registrarse fieldset {
+        padding: 20px;
+    }
+    .div_registrarse input[type="text"],
+    .div_registrarse input[type="password"],
+    .div_registrarse input[type="email"],
+    .div_registrarse input[type="date"],
+    .div_registrarse textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+    .div_registrarse input[type="submit"] {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
 }
