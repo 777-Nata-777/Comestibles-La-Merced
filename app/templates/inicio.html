@@ -10,7 +10,7 @@
         <body>
         <header class="header-inicio">
             <div class="logo-inicio">
-                <a href="/app/templates/inicio.html"><img src="/app/templates/img/Logo la merced.jfif"></a>
+                <a href="{% url 'inicio' %}"><img src="/app/templates/img/Logo la merced.jfif"></a>
             </div>
             <div class="h1-inicio">
             <p><h1>Comestibles la merced</h1></p>
@@ -23,17 +23,17 @@
                     <button class="btn btn-outline-success" type="submit">Buscar</button>
                 </form>
             </div>
-            <a href="/app/templates/inicio.html">Inicio</a>
+            <a href="{% url 'inicio' %}">Inicio</a>
             <a href="">Nosotros</a>
             <a href="">Ayuda</a>
         </nav>
         <div class="sesion">
-            <a href="/app/templates/iniciar sesion.html">
+            <a href="{% url 'Iniciar Sesion' %}">
                 <h3>
                     Iniciar Sesion
                 </h3>
             </a>
-            <a href="/app/templates/Registrarse.html">
+            <a href="{% url 'Registrarse' %}">
                 <h3>
                     Registrarse
                 </h3>
