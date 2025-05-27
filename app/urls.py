@@ -13,5 +13,7 @@ urlpatterns = [
     path('Iniciobd', views.empieza, name='empieza'),
     path('Productos/Crear', views.crear, name='crear'),
     path('Productos/Editar', views.editar, name='editar'),
+    path('Eliminar/<int:id>', views.eliminar, name='eliminar'),
+    path('Productos/Editar/<int:id>', views.editar, name='editar'),
 
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
